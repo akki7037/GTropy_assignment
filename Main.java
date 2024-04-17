@@ -5,7 +5,7 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
         Dictionary d = new Dictionary();
-        d.addPredefinedWords("D:\\Gtropy Assignment\\list.txt"); // TC-> O(num of words in dictionary * max. length of word), SC-> O(num of words in dictionary * max. length of word)
+        d.addPredefinedWords("list.txt"); // TC-> O(num of words in dictionary * max. length of word), SC-> O(num of words in dictionary * max. length of word)
         
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the word to search:");
@@ -60,7 +60,7 @@ class Dictionary {
         return suggested;
     }
 
-    // Check if two words are similar (e.g., same length and differ by at most one character)
+    // Check if two words are similar
     // TC-> O(num of words in dictionary * max. length of word) , SC-> constant
     private boolean isSimilar(String word1, String word2) {
         if (word1.length() != word2.length()) {

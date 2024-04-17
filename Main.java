@@ -1,4 +1,4 @@
-
+// Java code to design a dictionary data structure
 import java.util.*;
 import java.io.*;
 

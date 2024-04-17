@@ -5,7 +5,7 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
         Dictionary d = new Dictionary();
-        d.addPredefinedWords("D:\\Gtropy Assignment\\list.txt"); // TC-> O(num of words in dictionary * max. length of word), SC-> O(num of words in dictionary * max. length of word)
+        d.addPredefinedWords("list.txt"); // TC-> O(num of words in dictionary * max. length of word), SC-> O(num of words in dictionary * max. length of word)
         
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the word to search:");
